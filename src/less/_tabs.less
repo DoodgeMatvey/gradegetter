@@ -1,0 +1,27 @@
+.tabs {
+    position: relative;
+
+    &__header {
+        display: flex;
+        align-items: center;
+
+        &_item {
+            font-family: 'MaaxBold'; 
+            padding: 2rem 3rem;
+            font-size: 2rem;
+            line-height: 2.4rem; 
+            color: rgba(255, 255, 255, 0.7);
+            cursor: pointer;
+            transition: 0.2s;
+            &--active {
+                color: #203662;
+                background: #fff;
+            }
+        }
+    }
+
+    &__content {
+        padding: 3rem;
+        background: #fff;
+    }
+}

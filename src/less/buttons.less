@@ -1,0 +1,103 @@
+.button {
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #203662;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 1.5rem 3rem;
+
+    &--block {
+        display: block;
+        width: 100%;
+    }
+
+    &--md {
+        padding: 2rem 4rem;
+        font-size: 2rem;
+        text-transform: none;
+    }
+ 
+    &--border {
+        border: 1.5px solid #203662;
+
+        &:hover {
+            color: #fff;
+            background: #203662;
+        }
+    }
+
+
+
+   
+    &:hover {
+        border-color: #203662;
+    }
+
+    &+.button {
+        margin-left: 0.5rem;
+    }
+
+    &+.button--md {
+        margin-left: 3rem;
+    }
+    
+    &--orange {
+        border-radius: 8px;
+        
+        &.button--filled {
+            background: #FFA800;
+            color: #fff;
+            &:hover {
+                border-color: #FFA800;
+            }
+        }
+    }
+ 
+    &--orange.button--radius {
+        border-radius: 0 8px 8px 0;
+    }
+
+    &--blue {
+        &.button--filled {
+            background: #23A4EF;
+            color: #fff;
+
+            &:hover {
+                border-color: #23A4EF;
+                background: #fff;
+                color: #23A4EF;
+            }
+        }
+
+        &.button--border {
+            border-color: #23A4EF;
+            color: #23A4EF;
+
+            &:hover {
+                border-color: #23A4EF;
+                background: #23A4EF;
+                color: #fff;
+            }
+        }
+    }
+
+    &--white {
+        &.button--border {
+            border-color: #fff;
+            color: #fff;
+
+            &:hover {
+                border-color: #23A4EF;
+                background: #23A4EF;
+                color: #fff;
+            }
+        }
+    }
+}
